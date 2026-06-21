@@ -7,7 +7,7 @@ on:
         - cron: "*/5 * * * *"
 jobs: 
     event-info-job:
-        runs-on: ubuntu-lastest
+        runs-on: ubuntu-latest
         steps: 
             - name: Print Trigger event
               run: echo "My trigger is ${{ github.event_name }} event"
