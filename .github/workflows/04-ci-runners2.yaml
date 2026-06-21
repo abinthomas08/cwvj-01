@@ -1,0 +1,13 @@
+name: 04 understanding runners 
+on: push
+jobs: 
+    windows-runner-job:
+        runs-on: windows-lastest
+        steps:
+            - name: Print windows runner details
+
+              shell: bash
+              run: | 
+               echo "RUnner Name : $RUNNER_NAME"
+               echo  "RunnEr os: $RUNNER_OS"
+               echo "Runner architecture is : $RUNNER_ARCH"
