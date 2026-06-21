@@ -2,7 +2,7 @@ name: 04 understanding runners
 on: push
 jobs: 
     windows-runner-job:
-        runs-on: windows-lastest
+        runs-on: windows-latest
         steps:
             - name: Print windows runner details
 
